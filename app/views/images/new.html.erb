@@ -1,0 +1,8 @@
+<h1>Images New</h1>
+
+
+<%= form_for(:avatar, :url => {:action => 'create'}, :html => {:multipart => true}) do |f| %>
+<%= f.text_field :name %>
+<%= f.file_field :avatar %>
+<%= f.submit "Upload" %>
+<% end %>

@@ -1,0 +1,19 @@
+// Place all the styles related to the Images controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+
+h1{
+	font-family: 'Architects Daughter', cursive;
+	font-size: 50px;
+	text-align: center;
+	color: gray;
+}
+div {
+	border: 2px solid gray;
+	border-bottom: 0px;
+	height: 120px;
+	width: 960px;
+	margin: 0 auto;
+}
