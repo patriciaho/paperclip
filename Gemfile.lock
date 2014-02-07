@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/codahale/bcrypt-ruby.git
+  revision: df09e4c73f2f3d9a134b2abf536ca5f159f33075
+  specs:
+    bcrypt-ruby (3.1.2)
+
+GIT
   remote: git://github.com/florentmorin/mongoid-paperclip.git
   revision: 34a66cbc6c35098fb5fc9eaa5cf051c8556c9fe3
   specs:
@@ -151,6 +157,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-s3
+  bcrypt-ruby!
   bootstrap-sass (~> 3.1.0)
   coffee-rails (~> 4.0.0)
   font-awesome-sass
