@@ -1,5 +1,8 @@
 <div class="createuser">
 	<h1>Create a New User</h1>
+	<% if flash[:error] %>
+	    <p class="alert alert-danger"><%= flash[:error] %></p>
+	<% end %>
 	<%=form_for @user do |user|%>
 		<%=user.text_field :username, :placeholder => "Enter your username"%><br>
 		<%=user.password_field :password, :placeholder => "Enter password" %><br>

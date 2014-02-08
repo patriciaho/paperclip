@@ -3,7 +3,7 @@ class AuthsController < ApplicationController
 	# Show a login form
 	def new
 		if current_user
-			redirect_to episodes_path
+			redirect_to images_path
 		else
 			#Make a login form from an object that has username and password
 			@user = User.new
@@ -13,11 +13,12 @@ class AuthsController < ApplicationController
 	#Log them in!
 	def create
 		@user = User.find_by(username: params[:user][:username])
-		if @user.authenticated?(params[:user][:password])
-			session[:user_id] = @user.id
-			redirect_to images_path
+		if @user && @user.authenticated?(params[:user][:password]) && 
+				session[:user_id] = @user.id
+				redirect_to images_path
 		else
-			render images_path
+				flash[:error] = "BAAAAADDDD"
+				redirect_to images_path
 		end
 	end
 

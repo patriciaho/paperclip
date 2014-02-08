@@ -7,6 +7,7 @@
 
 body {
 	margin: 0;
+	margin-top: 50px;
 }
 
 h1{
@@ -40,7 +41,7 @@ form {
 
 .main {
 	margin-top: -20px;
-	background: url('logo2.jpg') no-repeat 0 30px; 
+	background: url('logo2.jpg') no-repeat; 
 	background-size: 100%;
 	/*background-position: center;*/
 	height: 800px;
